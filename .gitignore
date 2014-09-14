@@ -1,0 +1,8 @@
+*.log
+*.pot
+*.pyc
+db.sqlite3
+.idea/
+media
+.env
+local_settings.py
