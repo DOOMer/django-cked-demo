@@ -96,3 +96,28 @@ STATIC_ROOT = os.path.join(os.path.dirname(BASE_DIR), 'static/')
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(os.path.dirname(BASE_DIR), 'media/')
+
+# elFinder config. See https://github.com/Studio-42/elFinder/wiki/Client-configuration-options
+ELFINDER_OPTIONS = {
+    ## required options
+    'root': os.path.join(MEDIA_ROOT,  'images'),
+    'URL': '/media/images/',
+}
+
+# CKEditor config. See http://docs.ckeditor.com/#!/guide/dev_configuration
+CKEDITOR_OPTIONS = {
+    'skin': 'moono',
+    'toolbar': [
+            [
+            '-', 'Bold', 'Italic', 'Underline', 'Strike',
+            '-', 'BulletedList', 'NumberedList',
+            '-','Blockquote','-','JustifyLeft','JustifyCenter','JustifyRight',
+            '-', 'Image', 'Link', 'Unlink', 'Anchor', 'HorizontalRule',
+            '-', 'Source','Undo', 'Redo',
+            ],
+        ],
+    'filebrowserWindowWidth': 940,
+    'filebrowserWindowHeight': 450,
+    'width': 900,
+    'height': 480,
+}
