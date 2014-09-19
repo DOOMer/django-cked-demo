@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+ 
+{% block title%}{{ article.title }}{% endblock %}
+ 
+{% block content %}
+<div class="row">
+    <h2>
+            {{ article.title }}
+
+    </h2>
+</div>
+<div class="row">
+    <div class="col-md-12">
+    {{ article.text|safe }}
+    </div>
+</div>
+<div class="row text-right">
+<h3>
+    <a href="{% url 'articles-list' %}"><<< Back to main page</a>
+</h3>
+</div>
+{% endblock %} 

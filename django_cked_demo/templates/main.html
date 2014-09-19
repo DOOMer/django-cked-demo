@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block title%}Main page{% endblock %}
+
+{% block content %}
+{% for article in articles_list %}
+<div class="row">
+    <h2>
+        <a href="{% url 'article-detail' article.id %}">
+            {{ article.title }}
+        </a>
+    </h2>
+</div>
+<div class="row">
+    <div class="col-md-12">
+    {{ article.text|truncatechars:100|safe }}
+    </div>
+</div>
+{% endfor %}
+{% endblock %} 
