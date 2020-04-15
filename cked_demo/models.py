@@ -1,8 +1,7 @@
-from __future__ import unicode_literals
-from django.db import models
-from django.utils.encoding import python_2_unicode_compatible
 
-@python_2_unicode_compatible
+from django.db import models
+
+
 class Article(models.Model):
     title = models.CharField(max_length=100, verbose_name='Title')
     text = models.TextField(max_length=16536, verbose_name='Text')
