@@ -4,7 +4,7 @@ The demonstartion app for 'django-cked' application - https://pypi.python.org/py
 
 ### Requirements
 
-This project require these packages - Django >= 1.7, django-cked >= 0.0.9
+This project require these packages - Django >= 2.2, django-cked >= 0.1.4
 
 ### Installation
 
