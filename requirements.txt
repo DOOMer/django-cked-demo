@@ -1,4 +1,4 @@
-Django==2.2.13
+Django==2.2.20
 -e git://github.com/DOOMer/django-cked.git@14faabb0fbd88567711fc2aac48407d84a882610#egg=django_cked
 pkg-resources==0.0.0
 pytz==2019.3
